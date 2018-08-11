@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" >
+
+    <title>Bitcoin</title>
+  </head>
+
+  <body>
+    <header class="container">
+      <div class="row gray-bg p-2 mb-3">
+        <div class="text-center col-6">
+          <img src="img/icon.png" alt="Bitcoin icon" class="img-fluid bitcoin" width= "50px">
+        
+        </div>
+        <div class="text-center col-6">
+            <h1>Criptomoedas</h1>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <div class="row">
+        <div class="col-7">
+          <div class="gama-text">
+            <h2>Lorem Ipsim</h2>
+            <p class="text-justify"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum, sapien eu ullamcorper tincidunt, diam lorem pharetra ligula, in ullamcorper mauris augue sed elit. Vivamus eleifend, libero vitae dignissim placerat, ante tellus laoreet turpis, et commodo odio magna eget eros. Sed aliquet est id sodales blandit. Vestibulum sit amet aliquam felis, non vehicula lectus. Nullam aliquet dui justo, sit amet tincidunt arcu tempor vel. Praesent ac neque nec arcu venenatis consectetur eget ut arcu. Morbi aliquam sodales nulla vitae lacinia. Phasellus a volutpat lacus</p>
+          </div>
+          <table class="table mt-2">
+            <thead>
+              <tr>
+                <th scope="col">Rank</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Simbolo</th>
+                <th scope="col">R$</th>
+                <th scope="col">US$</th>
+              </tr>
+            </thead>
+            <tbody id="adiciona-linha">
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="col-5">
+          <div class="card">
+            <div class="card-header">Links</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="#">Bitcoin</a></li>
+              <li class="list-group-item"><a href="#">ETH</a></li>
+              <li class="list-group-item"><a href="#">DODGE Coin</a></li>
+              <li class="list-group-item"><a href="#">Cage Coin</a></li>
+            </ul>
+          </div>
+          
+          <div class="card mt-2">
+            <div class="card-header">Conversor</div>
+            <div class="card-body">
+              
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" >R$</span>
+                </div>
+                <input type="number" class="form-control" id="value" placeholder="" required>
+                <div class="input-group-prepend">
+                  <span class="input-group-text" >,00</span>
+                </div>
+              </div>
+             
+              <div class="input-group mt-3">
+								<select class="custom-select" id="conversor">
+									<option  value="0" selected disabled>Escolha uma moeda</option>
+								</select>
+							</div>
+							
+							<button type="submit" class="btn btn-block btn-primary mt-3" onClick="converteValor();">Converter</button>
+						  
+            </div>
+            <div class="card-footer text-muted">
+              <strong>Resultato:</strong> <span id="result"></span>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </main>
+    <footer class="jumbotron text-center">
+      copyright 2018
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/load-data.js"></script>
+    <script type="text/javascript" src="js/convert-data.js"></script>
+  </body>
+</html>
+
